@@ -6,6 +6,8 @@
     display: flex;
     align-items: center;
     padding: 0 62px 0 62px;
+    margin-bottom: 120px;
+    border-bottom: solid 1px $grey-opacity;
 }
 
 .header__li {
@@ -19,6 +21,16 @@
     font-size: 29px;
     margin: 30px 122px 30px 0;
     color: $white;
+    transition: 0.25s;
+    cursor: pointer;
+
+    &:hover {
+        color: $green;
+    }
+
+    &:active {
+        color: $grey;
+    }
 }
 
 .header__item {
@@ -34,10 +46,14 @@
     line-height: 140%;
     letter-spacing: -0.01em;
     color: $grey;
-    transition: 0.25px;
+    transition: 0.25s;
 
     &:hover {
         color: $white;
+    }
+
+    &:active {
+        color: $grey-dark;
     }
 }
 
@@ -106,4 +122,20 @@
 
 .header__company-svg {
     margin-right: 10px;
+}
+
+.header__button-block {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header__img {
+    top: -120px;
+    right: 0;
+    position: absolute;
+}
+
+.header__block-wraper {
+    position: relative;
 }
