@@ -1,5 +1,6 @@
 .header {
     background-color: $light-blue;
+    margin-bottom: 146px;
 }
 
 .header__block-nav {
@@ -75,6 +76,15 @@
     padding: 11px 24px 11px 24px;
     border-radius: 10px;
     background-color: $green;
+    transition: 0.25s;
+
+    &:hover {
+        box-shadow: rgb(50 173 103 / 37%) 0px 0px 20px 8px;
+    }
+    &:active {
+        background-color: $green-dark;
+        box-shadow: initial;
+    }
 }
 
 .header__title {
@@ -118,6 +128,14 @@
     display: -webkit-inline-box;
     color: $white;
     margin-bottom: 140px;
+    transition: 0.25s;
+    &:hover {
+        box-shadow: rgb(50 173 103 / 37%) 0px 0px 20px 8px;
+    }
+    &:active {
+        background-color: $green-dark;
+        box-shadow: initial;
+    }
 }
 
 .header__company-svg {
