@@ -59,8 +59,35 @@
     letter-spacing: -0.02em;
     opacity: 0.5;
     margin-bottom: 32px;
+    background-color: transparent;
+    transition: 0.25s;
+    margin-right: 105px;
+    &:hover {
+        opacity: 1;
+    }
 
     &:active {
-        opacity: 1;
+        border-bottom: 1px solid $green;
+    }
+}
+
+.main__fichi-demonstration--toggles:nth-last-of-type(1) {
+    margin-right: 0;
+}
+
+.main__fichi-link {
+    color: $green;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    transition: 0.25s;
+
+    &:hover {
+        color: $green-dark;
+    }
+
+    &:active {
+        color: $grey-dark;
     }
 }
