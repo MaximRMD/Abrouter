@@ -52,23 +52,8 @@
 }
 
 .main__fichi-demonstration--toggles {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 155%;
-    text-align: center;
-    letter-spacing: -0.02em;
-    opacity: 0.5;
     margin-bottom: 32px;
-    background-color: transparent;
-    transition: 0.25s;
     margin-right: 105px;
-    &:hover {
-        opacity: 1;
-    }
-
-    &:active {
-        border-bottom: 1px solid $green;
-    }
 }
 
 .main__fichi-demonstration--toggles:nth-last-of-type(1) {

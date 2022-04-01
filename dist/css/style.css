@@ -36,6 +36,7 @@ body {
   font-family: inter;
   height: 100%;
   color: #222a3a;
+  background-color: rgba(255, 255, 255, 0.15);
   font-size: 16px;
 }
 
@@ -71,6 +72,23 @@ body {
   max-width: 1465px;
   margin: 0 auto;
   box-sizing: content-box;
+}
+
+.button-toggles {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 155%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  opacity: 0.5;
+  background-color: transparent;
+  transition: 0.25s;
+}
+.button-toggles:hover {
+  opacity: 1;
+}
+.button-toggles:active {
+  border-bottom: 1px solid #32ad67;
 }
 
 .header {
@@ -291,22 +309,8 @@ body {
 }
 
 .main__fichi-demonstration--toggles {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 155%;
-  text-align: center;
-  letter-spacing: -0.02em;
-  opacity: 0.5;
   margin-bottom: 32px;
-  background-color: transparent;
-  transition: 0.25s;
   margin-right: 105px;
-}
-.main__fichi-demonstration--toggles:hover {
-  opacity: 1;
-}
-.main__fichi-demonstration--toggles:active {
-  border-bottom: 1px solid #32ad67;
 }
 
 .main__fichi-demonstration--toggles:nth-last-of-type(1) {
@@ -328,7 +332,7 @@ body {
   color: #535353;
 }
 
-.features {
+.features__backgraund {
   background-color: #f7f8fc;
 }
 
@@ -366,12 +370,13 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 155%;
-  min-width: 521px;
+  min-width: 338px;
   margin-bottom: 78px;
 }
 
 .features__cart {
   max-width: 380px;
+  margin-bottom: 130px;
   padding: 60px 50px 77px 50px;
   text-align: center;
   background-color: #ffffff;
@@ -387,4 +392,55 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 130px;
+}
+
+.features__subtitle-color {
+  opacity: 0.8;
+  margin-bottom: 60px;
+}
+
+.features__description {
+  display: flex;
+  justify-content: center;
+}
+
+.features__fichi-demonstration--toggles {
+  margin-right: 39px;
+  margin-bottom: 30px;
+}
+
+.features__fichi-demonstration--toggles:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+.features__title-wrapper {
+  margin-left: 79px;
+  max-width: 448px;
+}
+
+.features__img-block {
+  box-shadow: 0px 7px 16px 7px rgba(11, 5, 47, 0.07);
+  border-radius: 15px;
+  margin-bottom: 60px;
+}
+
+.features__img {
+  border-radius: 15px;
+  background-size: cover;
+}
+
+.features__fichi-demonstration--toggle {
+  border-bottom: 2px solid rgba(150, 153, 171, 0.1);
+  margin-bottom: 142px;
+}
+
+.features__cart-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+
+.features__svg {
+  margin-bottom: 20px;
 }
