@@ -89,3 +89,32 @@ body {
         border-bottom: 1px solid $green;
     }
 }
+
+.color__subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: $blue;
+}
+
+.titles {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: -.01em;
+}
+
+.button-green {
+    border-radius: 10px;
+    background-color: #32ad67;
+    transition: .25s;
+
+    &:hover {
+        box-shadow: rgb(50 173 103 / 37%) 0px 0px 20px 8px;
+    }
+    &:active {
+        background-color: $green-dark;
+        box-shadow: initial;
+    }
+}

@@ -1,0 +1,93 @@
+.pircing__block-title {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.pircing {
+    background-color: $light-blue;
+}
+
+.pircing__title {
+    color: $white;
+    margin-bottom: 56px;
+}
+
+.pircing__block-cart {
+    background: $blue-cart;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-sizing: border-box;
+    border-radius: 15px;
+    max-width: 380px;
+    margin-right: 40px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pircing__block-cart:nth-last-of-type(1) {
+    margin-right: 0;
+}
+
+.pircing__block-carts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pircing__text--color {
+    color: $white;
+}
+
+.pircing__cart-subtitle {
+    opacity: 0.8;
+}
+
+.pircing__cart-opportunities {
+    opacity: 0.6;
+    margin-bottom: 26px;
+    padding-top: 26px;
+}
+
+.pircing__cart-opportunities-list {
+    opacity: 0.8;
+}
+
+.pircing__cart-title {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 130%;
+    margin-bottom: 18px;
+}
+
+.pircing__cart-subtitle {
+    opacity: .8;
+    font-weight: 400;
+    line-height: 130%;
+    padding-bottom: 35px;
+    border-bottom: 1px solid $white-opacity;
+}
+
+.pircing__cart-opportunities-item {
+    line-height: 218%;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+}
+
+.pircing__cart-button {
+    padding: 18px 100px;
+}
+
+.pircing__check-svg {
+    margin-right: 10px;
+}
+
+.pircing__subtitle {
+    padding-top: 130px;
+    margin-bottom: 30px;
+}
+
+.pircing__cart-text {
+    margin-bottom: 30px;
+}
