@@ -6,7 +6,28 @@
 
 .pircing {
     background-color: $light-blue;
+
+    &::before {
+            content: "";
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid transparent;
+            margin-bottom: 130px;
+        }
+
+    &::after {
+        content: "";
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid transparent;
+        margin-bottom: 130px;
+    }
 }
+
+.pircing__block {
+    margin-bottom: 134px;
+}
+
 
 .pircing__title {
     color: $white;
@@ -19,11 +40,16 @@
     box-sizing: border-box;
     border-radius: 15px;
     max-width: 380px;
-    margin-right: 40px;
     padding: 40px 32px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 20px;
+
+    @include desktop {
+       margin-right: 40px; 
+       margin-bottom: 0;
+    }
 }
 
 .pircing__block-cart:nth-last-of-type(1) {
@@ -33,6 +59,12 @@
 .pircing__block-carts {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+
+    @include desktop {
+        flex-direction: row;
+    }
 }
 
 .pircing__text--color {
@@ -84,7 +116,6 @@
 }
 
 .pircing__subtitle {
-    padding-top: 130px;
     margin-bottom: 30px;
 }
 

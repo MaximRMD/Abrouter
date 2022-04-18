@@ -1,10 +1,18 @@
 .features__backgraund {
     background-color: $body-color;
+
+    &::after {
+        content: "";
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid transparent;
+        margin-bottom: 130px;
+    }
 }
 
 .features__block {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: nowrap;
     padding-top: 130px;
@@ -33,12 +41,17 @@
 
 .features__cart {
     max-width: 380px;
-    margin-bottom: 130px;
+    margin-bottom: 20px;
     padding: 60px 50px 77px 50px;
     text-align: center;
     background-color: $white;
-    margin-right: 40px;
+    
     box-shadow: 0px 34px 80px rgba(11, 5, 47, 0.07);
+
+    @include desktop {
+        margin-right: 40px;
+        margin-bottom: 130px;
+    }
 }
 
 .features__cart:nth-last-of-type(1) {
@@ -48,7 +61,16 @@
 .features__carts {
     display: flex;
     justify-content: center;
-    margin-bottom: 130px;
+    margin-bottom: 110px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+        flex-direction: row;
+        align-items: initial;
+        
+    }
 }
 
 .features__subtitle-color {
@@ -59,6 +81,12 @@
 .features__description {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.main__fichi-explore {
+    margin-bottom: 20px;
 }
 
 .features__fichi-demonstration--toggles {

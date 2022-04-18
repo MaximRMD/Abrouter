@@ -1,7 +1,12 @@
 .main__opportunities {
     display: flex;
     flex-direction: column-reverse;
-    align-items: flex-start;
+   text-align: center;
+    align-items: center;
+    @include desktop {
+        align-items: flex-start;
+        text-align: start;
+    }
 }
 
 .main__product {
@@ -29,10 +34,16 @@
 .main__fichi {
     display: flex;
     flex-wrap: wrap;
+    max-width: 696px;
 }
 
 .main__opportunities-flex {
     display: flex;
+    flex-wrap: wrap;
+ justify-content: center;
+    @include desktop {
+       justify-content: left;
+    }
 }
 
 .main__fichi-blocks {

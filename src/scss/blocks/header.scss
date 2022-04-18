@@ -9,36 +9,24 @@
     padding: 0 62px 0 62px;
     margin-bottom: 120px;
     border-bottom: solid 1px $grey-opacity;
+    flex-wrap: wrap;
 }
 
 .header__li {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.header__logo-main {
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 6px;
-    font-size: 29px;
-    margin: 30px 122px 30px 0;
+.header__logo-main {    
     color: $white;
-    transition: 0.25s;
-    cursor: pointer;
-
-    &:hover {
-        color: $green;
-    }
-
-    &:active {
-        color: $grey;
-    }
+    margin: 30px 122px 30px 0;
 }
 
 .header__item {
     margin-right: 53px;
 }
 .header__item:nth-last-of-type(1) {
-    margin-right: 400px;
+    margin-right: 20px;
 }
 
 .header__nav-link {
@@ -122,6 +110,8 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    flex: 1 1 auto;
+    justify-content: flex-end;
 }
 
 .header__img {
