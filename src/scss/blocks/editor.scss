@@ -1,0 +1,52 @@
+
+//Зеленый переключатель
+.editor__swich {
+    position: relative;
+    width: 45px;
+    height: 24px;
+    display: inline-block;
+    
+}
+
+.editor__swich > .editor__checkbox {
+    display: none;
+}
+
+.editor__swich > .editor__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $grey-opacity;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.editor__swich > .editor__slider::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    left: 5px;
+    top: 3px;
+    background-color: $white;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.editor__checkbox:checked + .editor__slider {
+background-color: $green;
+}
+
+.editor__checkbox:checked + .editor__slider::before {
+    transform: translateX(17px);
+}
+
+////////////////////////////////////////////////////////@at-root
+
+.editor__user-block {
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,24 @@
+.filter__link {
+    font-weight: 600;
+font-size: 25px;
+line-height: 140%;
+letter-spacing: -0.01em;
+transition: 0.25s;
+color: $grey;
+
+&:hover {
+    color: $blue;
+}
+}
+
+.filter__item {
+    margin-bottom: 50px;
+}
+
+.filter__item:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.filter__title {
+    margin-bottom: 260px;
+}

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins&family=Roboto&display=swap&_v=20220418214540"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins&family=Roboto&display=swap"
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220418214540">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Relvice</title>
 </head>
 
@@ -14,7 +14,7 @@
     <div class="wrapper">
         <header class="header">
     <div class="header__block-nav container__header">
-        <a href="index.html" class="header__logo-main logo">Abrouter</a>
+        <a href="index.html" id="logo" class="header__logo-main logo">Abrouter</a>
         <nav class="header__nav">
             <ul class="header__li">
                 <li class="header__item">
@@ -45,7 +45,7 @@
             <div class="header__company">
                 <p class="header__company-text">You are in good company:</p>
                 <div class="header__img ">
-                    <picture><source srcset="img/header-img.webp" type="image/webp"><img src="img/header-img.png" width="545.96" height="593.08" alt="человек рисует карандашем"></picture>
+                    <img src="img/header-img.png" width="545.96" height="593.08" alt="человек рисует карандашем">
                 </div>
                 <svg class="header__company-svg" width="93" height="24" viewBox="0 0 93 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -179,7 +179,7 @@
 
             <div class="main__fichi-demonstration">
                 <div class="main__fichi-demonstration--img">
-                    <picture><source srcset="img/demonstration.webp" type="image/webp"><img class="main__fichi-img" src="img/demonstration.jpg" alt="демонстрация кода"></picture>
+                    <img class="main__fichi-img" src="img/demonstration.jpg" alt="демонстрация кода">
                 </div>
                 <div class="main__fichi-demonstration--toggle">
                     <button class="main__fichi-demonstration--toggles button-toggles">Management interface</button>
@@ -333,14 +333,15 @@
             </div>
             <div class="features__img-wrapper">
                 <div class="features__img-block">
-                    <picture><source srcset="img/screenshot.webp" type="image/webp"><img class="features__img" src="img/screenshot.jpg" alt="демонстрация возможностей"></picture>
+                    <img class="features__img" src="img/screenshot.jpg" alt="демонстрация возможностей">
                 </div>
                 <div class="features__fichi-demonstration--toggle">
-                    <button class="features__fichi-demonstration--toggles button-toggles">What is ABRouter?</button>
-                    <button class="features__fichi-demonstration--toggles button-toggles">Experiments</button>
-                    <button class="features__fichi-demonstration--toggles button-toggles">Branch</button>
-                    <button class="features__fichi-demonstration--toggles button-toggles">Easy to manage</button>
-                    <button class="features__fichi-demonstration--toggles button-toggles">Best price</button>
+                    <a class="features__fichi-demonstration--toggles button-toggles">What is ABRouter?</a>
+                    <a href="experiments.html"
+                        class="features__fichi-demonstration--toggles button-toggles">Experiments</a>
+                    <a class="features__fichi-demonstration--toggles button-toggles">Branch</a>
+                    <a class="features__fichi-demonstration--toggles button-toggles">Easy to manage</a>
+                    <a class="features__fichi-demonstration--toggles button-toggles">Best price</a>
                 </div>
             </div>
         </div>
@@ -588,7 +589,7 @@
     <footer class="footer">
     <div class="footer__block">
         <div class="footer__content container">
-            <a href="index.html" class="footer__logo logo">Abrouter</a>
+            <a href="#logo" class="footer__logo logo">Abrouter</a>
             <div class="footer__item-block">
                 <ul class="footer__item">
                     <h3 class="footer__item-title">Product</h3>
@@ -626,7 +627,9 @@
         </div>
     </div>
 </footer>
-    <script src="js/app.min.js?_v=20220418214540"></script>
+    <script src="js/app.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
 </body>
 
 </html>

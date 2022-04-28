@@ -92,9 +92,10 @@
 .features__fichi-demonstration--toggles {
     margin-right: 39px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
-.features__fichi-demonstration--toggles:nth-last-of-type(1) {
+.features__fichi-demonstration--toggles:nth-last-child(1) {
     margin-right: 0;
 }
 
