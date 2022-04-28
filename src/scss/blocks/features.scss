@@ -81,7 +81,15 @@
 .features__description {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+   
+
+    @include tablets {
+         flex-wrap: wrap;
+    }
+
+    @include desktop {
+        flex-wrap: nowrap;
+    }
 
 }
 

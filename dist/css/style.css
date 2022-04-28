@@ -439,7 +439,16 @@ body {
 .features__description {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .features__description {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1241px) {
+  .features__description {
+    flex-wrap: nowrap;
+  }
 }
 
 .main__fichi-explore {
